@@ -1,0 +1,126 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: "Otterco Display Medium";
+  src: url("./assets/OttercoDisplay-Medium.otf");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Otterco Regular";
+  src: url("./assets/Otterco-Regular.otf");
+  font-display: block;
+}
+
+@theme {
+  --font-otterco-display: "Otterco Display Medium", sans-serif;
+  --font-otterco: "Otterco Regular", sans-serif;
+  --breakpoint-xs: 440px;
+}
+
+body {
+  color: var(--color-stone-800);
+  background-color: var(--color-stone-100);
+  font-family: "Otterco Regular", sans-serif;
+  text-align: center;
+  min-width: 300px;
+
+  header {
+    a:hover {
+      text-decoration: underline dotted;
+    }
+    .me {
+      height: 125px;
+      border-radius: 25%;
+    }
+  }
+
+  main {
+    a {
+      color: var(--color-rose-600);
+
+      &:hover {
+        color: var(--color-rose-700);
+      }
+    }
+  }
+
+  footer {
+    a {
+      color: var(--color-stone-900);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+  }
+
+  h1,
+  h2 {
+    font-family: "Otterco Display Medium", sans-serif;
+    font-weight: 500;
+  }
+
+  [class^="devicon-"]::before {
+    font-size: 3.5rem;
+  }
+
+  .toggle-button {
+    width: 40px;
+    height: 24px;
+    border-radius: 24px;
+
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+
+    background-color: var(--color-stone-800);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      left: 4px;
+      bottom: 4px;
+      background-color: var(--color-stone-100);
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+
+      border-radius: 50%;
+    }
+  }
+
+  &.dark {
+    color: var(--color-stone-100);
+    background-color: var(--color-stone-800);
+
+    main {
+      a {
+        color: var(--color-emerald-300);
+
+        &:hover {
+          color: var(--color-emerald-200);
+        }
+      }
+    }
+
+    footer {
+      a {
+        color: var(--color-stone-100);
+      }
+    }
+
+    .toggle-button {
+      background-color: var(--color-stone-100);
+
+      &::before {
+        transform: translateX(16px);
+        -webkit-transform: translateX(16px);
+        -ms-transform: translateX(16px);
+        background-color: var(--color-stone-800);
+      }
+    }
+  }
+}
