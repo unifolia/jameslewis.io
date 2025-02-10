@@ -5,7 +5,6 @@ import Footer from "./components/Footer";
 
 const Portfolio = () => {
   const { darkMode } = ThemeHook();
-
   document.body.className = `${darkMode ? "dark" : "regular"}`;
 
   return (
