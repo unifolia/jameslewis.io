@@ -31,7 +31,6 @@ body {
       text-decoration: underline dotted;
     }
     .me {
-      height: 125px;
       border-radius: 25%;
     }
   }
@@ -95,6 +94,10 @@ body {
   &.dark {
     color: var(--color-stone-100);
     background-color: var(--color-stone-800);
+
+    header .me {
+      box-shadow: 0px 0px 44px var(--color-emerald-300);
+    }
 
     main {
       a {

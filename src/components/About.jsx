@@ -10,15 +10,19 @@ const About = () => {
         Hey - I&apos;m James <EmojiLoop />
       </h1>
       <img
-        className="me border-3 border-stone-50 dark:border-stone-900 mb-10"
-        alt="A selfie I took in the mirror"
+        className="me border-3 border-stone-50 dark:border-stone-900 mb-10 dark:"
+        alt={
+          darkMode
+            ? "My fluffy black cat, Rembrandt"
+            : "Me in front of some New York scenery"
+        }
         src={
           darkMode
             ? "https://jameslewis.io/assets/cool-image.png"
             : "https://jameslewis.io/assets/image.png"
         }
-        width={144}
-        height={125}
+        width={200}
+        height={160}
       ></img>
       <h2 className="text-4xl mb-5">I&apos;m a front-end software engineer.</h2>
       <div className="text-xl mb-10">
