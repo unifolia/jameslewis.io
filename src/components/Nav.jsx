@@ -14,7 +14,7 @@ const Nav = () => {
         <li className="mr-5">
           <a
             target="_blank"
-            href="https://www.linkedin.com/in/james-r-lewis-sotelo-aba632160/"
+            href="https://www.linkedin.com/in/james-lewis-aba632160/details/experience/"
           >
             LinkedIn
           </a>

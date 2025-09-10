@@ -3,12 +3,16 @@ const ProjectsList = () => {
     <section className="w-8/10 mb-10 max-w-7xl">
       <h2 className="text-4xl mb-5 pt-10">Works</h2>
       <p className="text-xl mb-5">
-        I mix engineering and music on occasion. I like making music software,
-        and typically I build niche things for my own enjoyment, like{" "}
+        I mix engineering and music on occasion. I am the creator of the{" "}
+        <a target="_blank" href="https://midi.engineering/messenger/">
+          MIDI Engineering Messenger
+        </a>
+        , a utility for sending MIDI CC messages to musical devices. I have
+        other pieces of music software like{" "}
         <a target="_blank" href="https://jameslewis.io/metronome">
           this musical, polyrhythmic metronome
         </a>{" "}
-        or{" "}
+        and{" "}
         <a target="_blank" href="https://jameslewis.io/synthesizer">
           this generative, reverb-soaked synthesizer
         </a>
@@ -23,7 +27,7 @@ const ProjectsList = () => {
         <a target="_blank" href="https://jameslewis.io/wurdle/">
           this modified Wordle clone
         </a>
-        , and - of course -{" "}
+        , and, naturally,{" "}
         <a target="_blank" href="https://jameslewis.io/pac-rem/">
           a Pac-Man game
         </a>{" "}
