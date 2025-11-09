@@ -13,6 +13,8 @@ const LangProvider = ({ children }) => {
     "react",
     "redux",
     "nodejs",
+    "rust",
+    "wasm",
   ];
 
   return (

@@ -59,6 +59,10 @@ body {
     font-weight: 500;
   }
 
+  .devicon-rust-original.colored {
+    color: #d34516;
+  }
+
   [class^="devicon-"]::before {
     font-size: 3.5rem;
   }

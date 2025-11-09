@@ -7,14 +7,14 @@ const About = () => {
   return (
     <div className="flex flex-col items-center justify-center my-10 md:my-15 w-8/10 max-w-7xl">
       <h1 className="text-6xl/16 mb-9">
-        Hey - I&apos;m James <EmojiLoop />
+        Hello - I&apos;m James <EmojiLoop />
       </h1>
       <img
         className="me border-3 border-stone-50 dark:border-stone-900 mb-10 dark:"
         alt={
           darkMode
             ? "My fluffy black cat, Rembrandt"
-            : "Me in front of some New York scenery"
+            : "A devilishly handsome man"
         }
         src={
           darkMode
@@ -24,19 +24,13 @@ const About = () => {
         width={200}
         height={160}
       ></img>
-      <h2 className="text-4xl mb-5">I&apos;m a front-end software engineer.</h2>
+      <h2 className="text-4xl mb-5">
+        I am a Senior Software Engineer at Mozilla, working on Firefox.
+      </h2>
       <div className="text-xl mb-10">
         <p className="mb-5">
-          I specialize in JavaScript and its various offshoots, like React,
-          TypeScript and Node. I consider myself to be a strong generalist too,
-          and love digging into interesting problems and technologies. More than
-          anything, I Google a lot. I am also a strong proponent of web
-          accessibility.
-        </p>
-        <p className="mb-5">
-          I&apos;ve done engineering work for clients ranging from scrappy
-          startups to Fortune 500 companies. The list includes AWS, Dow Jones,
-          Capital One, Bell Canada, and more.
+          I&apos;m passionate about making the web open and accessible to
+          everyone.
         </p>
         <p>Outside of work, I play a lot guitar.</p>
       </div>

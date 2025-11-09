@@ -10,7 +10,7 @@ const Nav = () => {
 
   return (
     <nav className="w-9/10 max-w-7xl flex justify-between ">
-      <ul className="flex text-xl">
+      {/* <ul className="flex text-xl">
         <li className="mr-5">
           <a
             target="_blank"
@@ -24,7 +24,7 @@ const Nav = () => {
             Résumé
           </a>
         </li>
-      </ul>
+      </ul> */}
       <button
         onClick={handleSwitch}
         className="toggle-button"
