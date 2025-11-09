@@ -41,7 +41,7 @@ const ProgrammingLanguagesList = () => {
     <section className="w-8/10 max-w-7xl">
       <h2 className="text-4xl mb-10 pt-10">Skills</h2>
       <ul
-        className={`grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 xl:grid-cols-${programmingLanguages.length}`}
+        className={`grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 xl:grid-cols-${programmingLanguages.length}`}
       >
         {programmingLanguages.map((lang, i) => (
           <Language lang={lang} key={i} />
