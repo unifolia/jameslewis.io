@@ -27,7 +27,7 @@ const About = () => {
       <h2 className="text-4xl mb-5">
         I am a Senior Software Engineer at Mozilla, working on Firefox.
       </h2>
-      <div className="text-xl mb-10">
+      <div className="text-xl">
         <p className="mb-5">
           I&apos;m passionate about making the web open and accessible to
           everyone.
